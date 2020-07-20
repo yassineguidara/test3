@@ -32,7 +32,7 @@
                         <li class="active"><a href="pays.php">PAYS</a></li>
                         <li class="active"><a href="AjoutDateInscri.php">Ajouter</a></li>
                         <li class="active"><a href="deleteDateInscrit.php">supprimer</a></li>
-                        <li class="active"><a href="Addtableprof.php">Add Table Prof</a></li>
+                        <li class="active"><a href="Addtableprof.php">Add Table Professeur</a></li>
                     </ul>
 
 
