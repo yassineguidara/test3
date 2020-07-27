@@ -24,8 +24,8 @@ $cmd5='liquibase --changeLogFile=liquibase/dbchangelog.mysql.sql --url=jdbc:mysq
 //  system( $cmd3 ) ;
 system( $cmd5 ) ;
 
-//system( $cmd1 ) ;
-//echo"update\n";
+system( $cmd1 ) ;
+echo"update\n";
 echo"fermer\n";
   
 }else{
