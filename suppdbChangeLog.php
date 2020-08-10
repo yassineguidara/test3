@@ -56,11 +56,15 @@ echo"fermer\n";
         
   ?>
 <?php
-$file = '././liquibase/dbchangelog.mysql.sql';
+$file1 = '././liquibase/dbchangelog.mysql.sql';
 $newfile = 'example2.sql';
+$file='././database/crud.sql';
 
 if (!copy($file, $newfile)) {
-    echo "La copie $file du fichier a échoué...\n";
+  echo "La copie $file du fichier a échoué...\n";
+}
+if (!copy($file1, $newfile)) {
+    echo "La copie $file1 du fichier a échoué...\n";
 }
 ?>
 
