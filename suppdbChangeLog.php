@@ -57,15 +57,29 @@ echo"fermer\n";
   ?>
 <?php
 $file1 = '././liquibase/dbchangelog.mysql.sql';
-$newfile = 'example2.sql';
+$newfile = 'sqlCommit.sql';
 $file='././database/crud.sql';
 
-if (!copy($file, $newfile)) {
-  echo "La copie $file du fichier a échoué...\n";
+if (!copy($file, $newfile))
+ {
+
+       echo "La copie $file1 du fichier a échoué...\n";
 }
-if (!copy($file1, $newfile)) {
-    echo "La copie $file1 du fichier a échoué...\n";
-}
+
+ 
+  $data = file_get_contents($file1);
+  file_put_contents($newfile, $data, FILE_APPEND);
+
+
+//$newfile = file_get_contents('$newfile');
+//$newfile .="$file1";
+//file_put_contents('$newfile', $newfile);
+
+
+
+//if (!copy($file1, $newfile)) {
+ //   echo "La copie $file1 du fichier a échoué...\n";
+//}
 ?>
 
   
