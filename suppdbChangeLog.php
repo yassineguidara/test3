@@ -1,5 +1,5 @@
 <?php
-echo"open\n";
+//echo"open\n";
 $fichier = '././liquibase/dbchangelog.mysql.sql';
 $cmd0='cd c:/xampp/htdocs/test3/liquibase/';
 //$cmd3='liquibase --classpath=c:/xampp/htdocs/test3/liquibase/lib/mysql-connector-java-8.0.21.jar --driver= com.mysql.cj.jdbc.Driver --changeLogFile=dbchangelog.xml --url="jdbc:mysql://localhost:3306/crud " --username=root --password="" generateChangeLog';
@@ -13,30 +13,30 @@ $cmd5='liquibase --changeLogFile=liquibase/dbchangelog.mysql.sql --url=jdbc:mysq
 
  if( file_exists ( $fichier)){
   unlink( $fichier ) ;
-  echo"supprimer\n";
+ // echo"supprimer\n";
  /* echo"exist";
    $output = shell_exec('liquibase update'); 
   echo"$output ";}  */
   
    //  exec($cmd . " >> ././liquibase &");
   system( $cmd0 ) ;
-  echo"accedé\n";
+ // echo"accedé\n";
 //  system( $cmd3 ) ;
 system( $cmd5 ) ;
 
 system( $cmd1 ) ;
-echo"update\n";
-echo"fermer\n";
+//echo"update\n";
+//echo"fermer\n";
   
 }else{
   system( $cmd0 ) ;
-  echo"accedé\n";
+  //echo"accedé\n";
 //  system( $cmd3 ) ;
 system( $cmd5 ) ;
 
 system( $cmd1 ) ;
-echo"update\n";
-echo"fermer\n";
+//echo"update\n";
+//echo"fermer\n";
 
 }    
 

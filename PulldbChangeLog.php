@@ -10,26 +10,26 @@ $cmd5='liquibase --changeLogFile=liquibase/dbchangelogPull.mysql.sql --url=jdbc:
 
 if( file_exists ( $fichier)){
     unlink( $fichier ) ;
-    echo"supprimer\n";
+   // echo"supprimer\n";
   
     system( $cmd0 ) ;
-    echo"accedé\n";
+    //echo"accedé\n";
   
   system( $cmd5 ) ;
   
   system( $cmd1 ) ;
-  echo"update\n";
-  echo"fermer\n";
+ // echo"update\n";
+ // echo"fermer\n";
     
   }else{
     system( $cmd0 ) ;
-    echo"accedé\n";
+   // echo"accedé\n";
 
   system( $cmd5 ) ;
   
   system( $cmd1 ) ;
-  echo"update\n";
-  echo"fermer\n";
+  //echo"update\n";
+  //echo"fermer\n";
   
   }    
         
